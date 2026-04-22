@@ -1,0 +1,36 @@
+id: pgs-catalog-v20230119-hg19
+name: PGS Catalog v20230119 (hg19, 3295 scores)
+version: 20230119
+category: PGSPanel
+website: https://www.pgscatalog.org
+properties:
+  build: hg19
+  meta: /media/volume/PGS-Server-Storage/pgscalcserver/apps/pgs-catalog-v20230119-hg19/20230119/scores.meta.json
+  scores: /media/volume/PGS-Server-Storage/pgscalcserver/apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz
+  categories:
+    - id: Biological process
+      name: Biological process
+    - id: Body measurement
+      name: Body measurement
+    - id: Cardiovascular disease
+      name: Cardiovascular disease
+    - id: Cardiovascular measurement
+      name: Cardiovascular measurement
+    - id: Hematological measurement
+      name: Hematological measurement
+    - id: Inflammatory measurement
+      name: Inflammatory measurement
+    - id: Lipid or lipoprotein measurement
+      name: Lipid or lipoprotein measurement
+    - id: Neurological disorder
+      name: Neurological disorder
+    - id: Other measurement
+      name: Other measurement
+    - id: Other trait
+      name: Other trait
+    - id: Sex-specific PGS
+      name: Sex-specific PGS
+installation:
+  - import:
+      source: ${local_app_folder}/scores
+      target: ${hdfs_app_folder}/scores

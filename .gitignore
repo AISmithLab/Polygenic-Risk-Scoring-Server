@@ -1,0 +1,45 @@
+# Runtime data — never commit
+logs/
+workspace/
+tmp/
+data/
+
+# Cloudgene server binary
+cloudgene.jar
+
+# Built frontend (not source)
+webapp/
+
+# ── 1000G Phase 3 v5 reference panel data ─────────────────────────────────────
+# Large binary/genomic data; keep only cloudgene.yaml and README placeholders
+apps/1000g-phase-3-v5-public/2.0.0/bcfs/*
+apps/1000g-phase-3-v5-public/2.0.0/map/*
+apps/1000g-phase-3-v5-public/2.0.0/msavs/*
+apps/1000g-phase-3-v5-public/2.0.0/sites/*
+!apps/1000g-phase-3-v5-public/2.0.0/bcfs/README.md
+!apps/1000g-phase-3-v5-public/2.0.0/map/README.md
+!apps/1000g-phase-3-v5-public/2.0.0/msavs/README.md
+!apps/1000g-phase-3-v5-public/2.0.0/sites/README.md
+
+# ── Cancer PRSweb score files ──────────────────────────────────────────────────
+apps/cancer-prsweb-v20200608-hg19/20200608/scores/*
+!apps/cancer-prsweb-v20200608-hg19/20200608/scores/README.md
+
+# ── PGS Catalog v20221123 score files ─────────────────────────────────────────
+apps/pgs-catalog-v20221123-hg19/20221123/scores/*
+!apps/pgs-catalog-v20221123-hg19/20221123/scores/README.md
+
+# ── PGS Catalog v20230119 score files & large collection ──────────────────────
+apps/pgs-catalog-v20230119-hg19/20230119/scores/*
+apps/pgs-catalog-v20230119-hg19/20230119/scores_harmonized/*
+apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz
+apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz.info
+!apps/pgs-catalog-v20230119-hg19/20230119/scores/README.md
+!apps/pgs-catalog-v20230119-hg19/20230119/scores_harmonized/README.md
+
+# Compiled binaries bundled with the app (platform-specific)
+apps/imputationserver2-pgs/2.0.12/files/bin/
+
+# Nextflow cache inside app source
+apps/imputationserver2-pgs/2.0.12/.nextflow/
+apps/imputationserver2-pgs/2.0.12/work/

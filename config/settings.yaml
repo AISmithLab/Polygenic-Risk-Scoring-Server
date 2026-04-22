@@ -1,0 +1,18 @@
+!cloudgene.mapred.util.Settings
+apps: !java.util.Vector
+-  filename: apps/imputationserver2-pgs/2.0.12/cloudgene.pgs.yaml
+   permission: user
+-  filename: apps/cancer-prsweb-v20200608-hg19/20200608/cloudgene.yaml
+   permission: user
+-  filename: apps/pgs-catalog-v20230119-hg19/20230119/cloudgene.yaml
+   permission: user
+-  filename: apps/1000g-phase-3-v5-public/2.0.0/cloudgene.yaml
+   permission: user
+-  filename: apps/pgs-catalog-v20221123-hg19/20221123/cloudgene.yaml
+   permission: user
+navigation: !java.util.Vector
+- !cloudgene.mapred.util.MenuItem
+   id: help
+   name: Help
+   link: http://docs.cloudgene.io
+secretKey: kiPaBKdjdzABPnErTNuIIzFTFyFzMuHeLQNFZzYxpxHllmmVGtSWoQusBNhkSsqn

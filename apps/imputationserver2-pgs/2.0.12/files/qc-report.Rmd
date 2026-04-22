@@ -1,0 +1,134 @@
+---
+title: "QC-Report"
+output:
+  rmdformats::robobook:
+    self_contained: true
+    thumbnails: false
+    lightbox: true
+    gallery: false
+    highlight: tango
+params:
+  maf_file: ""
+  validation_report: ""
+  qc_report: ""
+  name: ""
+  allele_frequency_population: ""
+  version: ""
+  date: ""
+  service: ""
+---
+
+```{r setup, echo=FALSE, include=FALSE}
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(dplyr)
+  library(tidyr)
+  library(knitr)
+  library(stringr)
+  library(glue)
+})
+```
+
+| Parameter        | Value                       |
+|------------------|-----------------------------|
+| Service          | `r params$service`          |
+| Job              | `r params$name`             |
+| Pipeline Version | `r params$version`          |
+| Date             | `r params$date`             |
+
+## Statistics
+```{r echo=FALSE, warning=FALSE}
+
+# Define the function
+parse_report <- function(file_path) {
+  # Read the entire file content
+  content <- readLines(file_path)
+
+  # Create a tibble from the log content, filtering out lines starting with :: and those without ':'
+  result_df <- tibble(line = content) %>%
+    # Filter out lines starting with :: or without a colon (:)
+    filter(!str_starts(line, "::") & str_detect(line, ":")) %>%
+    # Separate lines into Key and Value based on ':'
+    separate(col = line, into = c("Parameter", "Value"), sep = ":", extra = "merge") %>%
+    # Trim whitespace from Key and Value
+    mutate(across(everything(), ~trimws(.))) %>%
+    # Ensure there are no empty Key values and fill missing Values
+    filter(!is.na(Parameter) & Parameter != "") %>%
+    # Convert the tibble to a data frame
+    as.data.frame()
+  
+   # Return the result as a data frame
+  return(result_df)
+}
+
+# Define the path to the log file
+validation <- parse_report(params$validation_report)
+qc <- parse_report(params$qc_report)
+kable(rbind(validation,qc))
+
+```
+
+## Allele-Frequency Correlation
+
+### Uploaded Samples vs. Reference Panel
+
+The plot shows the densities of frequencies falling into each part. The first 5000 points from areas of lowest regional densities will be plotted.
+
+```{r echo=FALSE}
+if (params$allele_frequency_population != "off") {
+
+    data <- read.table(params$maf_file, header = TRUE, sep="\t")
+    
+    lm_eqn <- function(df){
+        m <- lm(REFERENCE_AAF ~ AAF, df)
+        eq <- paste('r2 =', format(summary(m)$r.squared, digits = 3))
+        as.character(as.expression(eq))
+    }
+
+    smoothScatter(data$AAF, data$REFERENCE_AAF, nrpoints = 5000, xlim = c(0, 1),
+                  xlab = "Ref Allele Frequency (Uploaded Samples)", 
+                  ylab = "Ref Allele Frequency (Reference Panel)", useRaster = TRUE)
+    legend("topleft", legend = lm_eqn(data), bty = "n", pch = NA)
+} else {
+    cat("Allele Frequency Check is disabled.")
+}
+
+```
+
+### Potential Frequency Mismatches
+
+Markers where chisq is greater than 300. 
+
+```{r echo=FALSE}
+
+if (params$allele_frequency_population != "off") {
+    
+    filtered_data <- data %>%
+      filter(CHISQ > 300)
+
+    chisq_length <- nrow(filtered_data)
+    if(chisq_length > 0) {
+      cat("Total mismatches:", chisq_length, "\n")
+    } else {
+        cat("No mismatches detected.")
+    }
+
+    if (chisq_length > 0) {
+        # Print the first 5000 mismatches
+        for (i in 1:min(5000, chisq_length)) {
+            cat("Mismatched frequencies for '", filtered_data$ID[i], "' f[", filtered_data$REF[i], ",", filtered_data$ALT[i],"] = [", (1-filtered_data$AAF[i]), ",", filtered_data$AAF[i],"] vs [", (1-filtered_data$REFERENCE_AAF[i]), ",", filtered_data$REFERENCE_AAF[i],"], chisq ", filtered_data$CHISQ[i], "\n", sep = "")
+        }
+        if (chisq_length > 5000) {
+            cat("Report outputs only first 5000 mismatches.")
+        }
+    }
+} else {
+    cat("Allele Frequency Check is disabled.")
+}
+```
+
+---
+
+<small>
+This report has been created with **`r params$service` (`r params$version`)**.
+</small>

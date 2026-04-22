@@ -1,0 +1,35 @@
+name:  1000G Phase 3 v5 - Public (GRCh37/hg19)
+description: 1000G Phase 3 v5 for Michigan Imputation Server.
+version: 2.0.0
+website: http://imputationserver.sph.umich.edu
+category: RefPanel
+id: 1000g-phase-3-v5-public
+
+properties:
+  id: 1000g-phase-3-v5-public
+  genotypes: ${CLOUDGENE_APP_LOCATION}/msavs/$chr.1000g.Phase3.v5.With.Parameter.Estimates.msav
+  sites: ${CLOUDGENE_APP_LOCATION}/sites/ALL_1000G_phase3_integrated_v5_chr$chr.sites.gz
+  mapEagle: ${CLOUDGENE_APP_LOCATION}/map/genetic_map_hg19_withX.txt.gz
+  refEagle: ${CLOUDGENE_APP_LOCATION}/bcfs/ALL.chr$chr.phase3_v5.shapeit2_mvncall_integrated.noSingleton.genotypes.recode.bcf
+  build: hg19
+  qcFilter:
+    alleleSwitches: 100  
+  populations:
+    - id: afr
+      name: AFR
+      samples: 661
+    - id: amr
+      name: AMR
+      samples: 347
+    - id: eas
+      name: EAS
+      samples: 504
+    - id: sas
+      name: SAS
+      samples: 489
+    - id: eur
+      name: EUR
+      samples: 503
+    - id: "off"
+      name: Off
+      samples: -1
