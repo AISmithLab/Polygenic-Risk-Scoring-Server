@@ -14,6 +14,7 @@ workflow PGS_CALCULATION {
 
     main:    
     scores_txt = file(params.pgscatalog.scores, checkIfExists:true)
+    scores_tbi = file(params.pgscatalog.scores + ".tbi", checkIfExists:true)
     scores_info = file(params.pgscatalog.scores + ".info", checkIfExists:true)
     scores_meta = file(params.pgscatalog.meta, checkIfExists:true)
 
@@ -24,7 +25,7 @@ workflow PGS_CALCULATION {
 
     CALCULATE_CHUNKS(
         imputed_chunks,
-        tuple(scores_txt, scores_info),
+        tuple(scores_txt, scores_tbi, scores_info),
         FILTER_BY_CATEGORY.out.scores
     )
 

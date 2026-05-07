@@ -8,6 +8,10 @@ apps: !java.util.Vector
    permission: user
 -  filename: apps/1000g-phase-3-v5-public/2.0.0/cloudgene.yaml
    permission: user
+-  filename: apps/1000g-phase-3-v5-public-subset/2.0.0/cloudgene.yaml
+   permission: user
+-  filename: apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/cloudgene.yaml
+   permission: user
 -  filename: apps/pgs-catalog-v20221123-hg19/20221123/cloudgene.yaml
    permission: user
 navigation: !java.util.Vector

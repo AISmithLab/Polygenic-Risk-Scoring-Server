@@ -18,7 +18,7 @@ process FILTER_BY_CATEGORY {
         --out scores.txt 
 
     # Count the number of lines in scores.txt
-    line_count=\$(wc -l < scores.txt)
+    line_count=\$(wc -w < scores.txt)
 
     echo "::group::"
     echo "Trait Category: ${category}"

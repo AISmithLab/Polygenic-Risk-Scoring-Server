@@ -5,7 +5,7 @@ process CALCULATE_CHUNKS {
 
     input:
     tuple val(chr), val(start), val(end), path(vcf_file),  path(info_file),  path(empirical_vcf_file)
-    tuple(path(scores_txt), path(scores_info))
+    tuple(path(scores_txt), path(scores_tbi), path(scores_info))
     path(scores)
 
     output:

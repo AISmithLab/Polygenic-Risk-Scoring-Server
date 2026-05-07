@@ -11,7 +11,7 @@ cloudgene.jar
 webapp/
 
 # ── 1000G Phase 3 v5 reference panel data ─────────────────────────────────────
-# Large binary/genomic data; keep only cloudgene.yaml and README placeholders
+# Large binary/genomic data; keep only cloudgene.yaml, build scripts, and READMEs
 apps/1000g-phase-3-v5-public/2.0.0/bcfs/*
 apps/1000g-phase-3-v5-public/2.0.0/map/*
 apps/1000g-phase-3-v5-public/2.0.0/msavs/*
@@ -20,6 +20,28 @@ apps/1000g-phase-3-v5-public/2.0.0/sites/*
 !apps/1000g-phase-3-v5-public/2.0.0/map/README.md
 !apps/1000g-phase-3-v5-public/2.0.0/msavs/README.md
 !apps/1000g-phase-3-v5-public/2.0.0/sites/README.md
+
+# ── 1000G Phase 3 v5 no-HG00331 variant ──────────────────────────────────────
+apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/bcfs/*
+apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/map/*
+apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/msavs/*
+apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/sites/*
+!apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/bcfs/README.md
+!apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/map/README.md
+!apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/msavs/README.md
+!apps/1000g-phase-3-v5-public/2.0.0-no-HG00331/sites/README.md
+
+# ── 1000G Phase 3 v5 public subset (2382 samples) ────────────────────────────
+apps/1000g-phase-3-v5-public-subset/2.0.0/bcfs/*
+apps/1000g-phase-3-v5-public-subset/2.0.0/map/*
+apps/1000g-phase-3-v5-public-subset/2.0.0/msavs/*
+apps/1000g-phase-3-v5-public-subset/2.0.0/sites/*
+apps/1000g-phase-3-v5-public-subset/2.0.0/build.log
+apps/1000g-phase-3-v5-public-subset/2.0.0/build_terminal.log
+!apps/1000g-phase-3-v5-public-subset/2.0.0/bcfs/README.md
+!apps/1000g-phase-3-v5-public-subset/2.0.0/map/README.md
+!apps/1000g-phase-3-v5-public-subset/2.0.0/msavs/README.md
+!apps/1000g-phase-3-v5-public-subset/2.0.0/sites/README.md
 
 # ── Cancer PRSweb score files ──────────────────────────────────────────────────
 apps/cancer-prsweb-v20200608-hg19/20200608/scores/*
@@ -33,6 +55,7 @@ apps/pgs-catalog-v20221123-hg19/20221123/scores/*
 apps/pgs-catalog-v20230119-hg19/20230119/scores/*
 apps/pgs-catalog-v20230119-hg19/20230119/scores_harmonized/*
 apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz
+apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz.tbi
 apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz.info
 !apps/pgs-catalog-v20230119-hg19/20230119/scores/README.md
 !apps/pgs-catalog-v20230119-hg19/20230119/scores_harmonized/README.md
