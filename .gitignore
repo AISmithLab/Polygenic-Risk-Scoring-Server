@@ -60,6 +60,14 @@ apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz.info
 !apps/pgs-catalog-v20230119-hg19/20230119/scores/README.md
 !apps/pgs-catalog-v20230119-hg19/20230119/scores_harmonized/README.md
 
+# Ancestry panel: LASER HGDP reference data (downloaded/derived, ~1.3 GB).
+# Keep cloudgene.yaml, the sample->super-population map, the upstream ReadMe and
+# the rebuild recipe in README.md; see that README to regenerate the rest.
+apps/ancestry-hgdp-worldwide/1.0.0/HGDP_938.geno
+apps/ancestry-hgdp-worldwide/1.0.0/HGDP_938.site
+apps/ancestry-hgdp-worldwide/1.0.0/HGDP_938.range
+apps/ancestry-hgdp-worldwide/1.0.0/HGDP_938.RefPC.coord
+
 # Compiled binaries bundled with the app (platform-specific)
 apps/imputationserver2-pgs/2.0.12/files/bin/
 

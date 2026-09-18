@@ -1,0 +1,19 @@
+id: ancestry-hgdp-worldwide
+name: Worldwide (HGDP)
+description: "Ancestry estimation reference panel: 938 HGDP samples (Illumina 650K, GRCh37/hg19, 632,958 sites) projected into a LASER/TRACE PCA space and labelled with GWAS/PGS Catalog ancestry categories (AFR, AMR, EAS, EUR, GME, SAS, OTH). Cite Li et al. 2008 (Science 319:1100) and Wang et al. 2014 (Nat Genet 46:409)."
+version: 1.0.0
+website: https://csg.sph.umich.edu/chaolong/LASER/
+category: AncestryPanel
+
+properties:
+  enabled: true
+  references: "${CLOUDGENE_APP_LOCATION}/HGDP_938.*"
+  # Mirror of the pipeline defaults in nextflow.config. Cloudgene substitutes this
+  # whole map for params.ancestry, so every key the workflow reads must be present
+  # here regardless of whether the params merge is deep or shallow.
+  dim: 10
+  dim_high: 20
+  batch_size: 50
+  max_pcs: 8
+  k: 10
+  threshold: 0.75
