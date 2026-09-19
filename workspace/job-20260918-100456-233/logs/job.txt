@@ -1,0 +1,69 @@
+26/09/18 10:04:56 Setup External Workspace on Local Workspace
+26/09/18 10:04:56 Details:
+26/09/18 10:04:56   Name: benchmark-w-ancestry
+26/09/18 10:04:56   Job-Id: job-20260918-100456-233
+26/09/18 10:04:56   Submitted On: Fri Sep 18 10:04:56 UTC 2026
+26/09/18 10:04:56   Submitted By: admin
+26/09/18 10:04:56   User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+26/09/18 10:04:56   Inputs:
+26/09/18 10:04:56     Reference Panel (<a href="https://imputationserver.sph.umich.edu/start.html#!pages/refpanels" target="_blank">Details</a>): apps@1000g-phase-3-v5-public@2.0.0
+26/09/18 10:04:56     Input Files - path to folder containing .vcf.gz files (e.g. /media/volume/PGS-Server-Storage/population_genotyping_data/modified-chromosomes): /media/volume/PGS-Server-Storage/population_genotyping_data/chromosomes
+26/09/18 10:04:56     Array Build: hg19
+26/09/18 10:04:56     rsq Filter: 0
+26/09/18 10:04:56     null: 
+26/09/18 10:04:56     <b>PGS Calculation</b><br><small class="text-muted">Please select a collection of polygenic scores to enable on the fly PGS calculation.</small>: 
+26/09/18 10:04:56     Scores: apps@pgs-catalog-v20230119-hg19@20230119
+26/09/18 10:04:56     Trait Category: Cancer
+26/09/18 10:04:56     Ancestry Estimation: apps@ancestry-hgdp-worldwide@1.0.0
+26/09/18 10:04:56     null: 
+26/09/18 10:04:56     Password set by user.: null
+26/09/18 10:04:56     I will not attempt to re-identify or contact research participants.: accepted
+26/09/18 10:04:56     I will report any inadvertent data release, security breach or other data management incident of which I become aware.: accepted
+26/09/18 10:04:56   Outputs:
+26/09/18 10:04:56     Downloads: /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/output
+26/09/18 10:04:56 Executing Job....
+26/09/18 10:04:57 Planner: WDL evaluated.
+26/09/18 10:04:57 Execute 1 steps...
+26/09/18 10:04:57 ------------------------------------------------------
+26/09/18 10:04:57 Quality Control and Imputation
+26/09/18 10:04:57 ------------------------------------------------------
+26/09/18 10:04:57 Wrote params to file '/media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/step1-params.json'
+26/09/18 10:04:57 Command: [/bin/bash, -c, PATH=$PATH:/usr/local/bin source /media/volume/PGS-Server-Storage/pgscalcserver/config/nextflow.env; source /media/volume/PGS-Server-Storage/pgscalcserver/config/imputationserver2-pgs/2.0.12/nextflow.env; /usr/local/bin/nextflow -log /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/logs/step1-nextflow.log run /media/volume/PGS-Server-Storage/pgscalcserver/apps/imputationserver2-pgs/2.0.12/main.nf -profile docker -c /media/volume/PGS-Server-Storage/pgscalcserver/config/nextflow.config -c /media/volume/PGS-Server-Storage/pgscalcserver/config/imputationserver2-pgs/2.0.12/nextflow.config -w /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/temp/nextflow -params-file /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/step1-params.json -ansi-log false -with-weblog http://localhost:8082/api/v2/collect/7af52cd7af6dddce39ba9c978a3dad7f465bfe4203cafff9d642ae9c403a3946 -with-trace /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/logs/step1-trace.csv -with-report /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/logs/step1-report.html -with-timeline /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/logs/step1-timeline.html]
+26/09/18 10:04:57 Working Directory: /media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233
+26/09/18 10:06:41 Increment counter samples by 2318
+26/09/18 10:06:41 Increment counter variants by 2401408
+26/09/18 10:06:41 Increment counter chromosomes by 50996
+26/09/18 10:06:41 Increment counter runs by 1
+26/09/18 10:24:02 Reference Panel Ranges: genome-wide
+26/09/19 00:05:18 Exit Code: 0
+26/09/19 00:05:18 Submit counter samples
+26/09/19 00:05:18 Submit counter genotypes
+26/09/19 00:05:18 Submit counter chromosomes
+26/09/19 00:05:18 Submit counter runs
+26/09/19 00:05:18 Set value reference_panel to 1000g-phase-3-v5-public
+26/09/19 00:05:18 Submit value reference_panel
+26/09/19 00:05:18 Set value phasing_engine to eagle
+26/09/19 00:05:18 Submit value phasing_engine
+26/09/19 00:05:18 Set value genome_build to hg19
+26/09/19 00:05:18 Submit value genome_build
+26/09/19 00:05:18   Quality Control and Imputation [14 h 21 sec]
+26/09/19 00:05:18 Set value application to imputationserver2-pgs
+26/09/19 00:05:18 Submit value application
+26/09/19 00:05:18 Job Execution successful.
+26/09/19 00:05:18 Exporting Data...
+26/09/19 00:05:18   Exporting parameter output...
+26/09/19 00:05:18   Added new download estimated-population.txt.
+26/09/19 00:05:18   Added new download quality-control.html.
+26/09/19 00:05:18   Added new download scores.report.zip.
+26/09/19 00:05:18   Added new download scores.info.
+26/09/19 00:05:18   Added new download scores.html.
+26/09/19 00:05:18   Added new download scores.coverage.
+26/09/19 00:05:18   Added new download statistics/chunks-excluded.txt.
+26/09/19 00:05:18   Added new download statistics/snps-excluded.txt.
+26/09/19 00:05:18   Added new download statistics/snps-typed-only.txt.
+26/09/19 00:05:18   Added new download scores.txt.
+26/09/19 00:05:18   Added new download qc_report.txt.
+26/09/19 00:05:18   Added new download estimated-populations.html.
+26/09/19 00:05:18 Data Export successful.
+26/09/19 00:05:18 Cleaning up...
+26/09/19 00:05:20 Cleanup successful.

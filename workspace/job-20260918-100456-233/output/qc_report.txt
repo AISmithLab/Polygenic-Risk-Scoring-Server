@@ -1,0 +1,34 @@
+::warning:: Skip allele frequency check.
+::log:: Reference Panel Ranges: genome-wide
+::message:: Calculating QC Statistics
+::group type=message::
+<b>Statistics:</b>
+Alternative allele frequency > 0.5 sites: 388,989
+Reference Overlap: 97.44 %
+Match: 2,226,848
+Allele switch: 0
+Strand flip: 0
+Strand flip and allele switch: 0
+A/T, C/G genotypes: 0
+<b>Filtered sites:</b>
+Filter flag set: 0
+Invalid alleles: 4
+Multiallelic sites: 169
+Duplicated sites: 0
+NonSNP sites: 0
+Monomorphic sites: 104,911
+Allele mismatch: 10,703
+SNPs call rate < 90%: 38,535
+::endgroup::
+::group type=warning::
+Excluded sites in total: 154,322
+Remaining sites in total: 2,188,313
+See snps-excluded.txt for details
+Typed only sites: 58,773
+See typed-only.txt for details
+
+<b>Warning:</b> 1 Chunk(s) excluded: at least one sample has a call rate < 50.0% (see chunks-excluded.txt for details).
+
+Remaining chunk(s): 153
+
+::endgroup::

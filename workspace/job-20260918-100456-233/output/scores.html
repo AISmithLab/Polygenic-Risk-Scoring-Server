@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="pgs-calc">
+  <meta name="generator" content="pgs-calc 1.6.1">
+  <title>Report - pgs-calc</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- report.css -->
+<link rel="stylesheet" href="data:text/css;base64,LmJkLXBsYWNlaG9sZGVyLWltZyB7CiAgZm9udC1zaXplOiAxLjEyNXJlbTsKICB0ZXh0LWFuY2hvcjogbWlkZGxlOwogIC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7CiAgLW1vei11c2VyLXNlbGVjdDogbm9uZTsKICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7CiAgdXNlci1zZWxlY3Q6IG5vbmU7Cn0KCkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkgewogIC5iZC1wbGFjZWhvbGRlci1pbWctbGcgewogICAgZm9udC1zaXplOiAzLjVyZW07CiAgfQp9Cgojd3JhcHBlciB7CiAgb3ZlcmZsb3cteDogaGlkZGVuOwp9Cgojc2lkZWJhci13cmFwcGVyIHsKICBoZWlnaHQ6IDEwMCU7CiAgcG9zaXRpb246IGZpeGVkOwogIG1hcmdpbi1sZWZ0OiAwcmVtOwogIC13ZWJraXQtdHJhbnNpdGlvbjogbWFyZ2luIC4yNXMgZWFzZS1vdXQ7CiAgLW1vei10cmFuc2l0aW9uOiBtYXJnaW4gLjI1cyBlYXNlLW91dDsKICAtby10cmFuc2l0aW9uOiBtYXJnaW4gLjI1cyBlYXNlLW91dDsKICB0cmFuc2l0aW9uOiBtYXJnaW4gLjI1cyBlYXNlLW91dDsKfQoKI3BhZ2UtY29udGVudC13cmFwcGVyIHsKICBwYWRkaW5nLWxlZnQ6IDI1MHB4OwogIG1hcmdpbi10b3A6IDkwcHg7CiAgd2lkdGg6IDEwMCU7Cn0KCiN3cmFwcGVyLnRvZ2dsZWQgI3NpZGViYXItd3JhcHBlciB7CiAgbWFyZ2luLWxlZnQ6IDA7Cn0KCi5zaWRlYmFyLXNlYXJjaCB7CiAgbWFyZ2luLXRvcDogODBweDsKICB3aWR0aDogMjUwcHg7Cn0KCi5zaWRlYmFyLWxpc3QgewogIHdpZHRoOiAyNDJweDsKICB0b3A6IDEzNXB4OwogIHBvc2l0aW9uOiBmaXhlZDsKICBvdmVyZmxvdy15OiBzY3JvbGw7CiAgYm90dG9tOiAwcHg7CiAgcGFkZGluZy10b3A6IDBweDsKICBwYWRkaW5nLXJpZ2h0OiA4cHg7Cn0KCi5jb3ZlcmFnZS1sb3cgewogIGJvcmRlci1sZWZ0LXdpZHRoOiA4cHg7CiAgYm9yZGVyLWxlZnQtY29sb3I6ICNkYzM1NDU7Cn0KCi5jb3ZlcmFnZS1tZWRpdW0gewogIGJvcmRlci1sZWZ0LXdpZHRoOiA4cHg7CiAgYm9yZGVyLWxlZnQtY29sb3I6ICNmZmMxMDc7Cn0KCi5jb3ZlcmFnZS1oaWdoIHsKICBib3JkZXItbGVmdC13aWR0aDogOHB4OwogIGJvcmRlci1sZWZ0LWNvbG9yOiAjMjhhNzQ1Owp9CgouY292ZXJhZ2UtemVybyB7CiAgYm9yZGVyLWxlZnQtd2lkdGg6IDhweDsKICBib3JkZXItbGVmdC1jb2xvcjogI2RjMzU0NTsKfQoKLmJhZGdlLWxvdyB7CiAgY29sb3I6ICNmZmZmZmY7CiAgYmFja2dyb3VuZDogI2RjMzU0NTsKfQoKLmJhZGdlLW1lZGl1bSB7CiAgY29sb3I6ICNmZmZmZmY7CiAgYmFja2dyb3VuZDogI2ZmYzEwNzsKfQoKLmJhZGdlLWhpZ2ggewogIGNvbG9yOiAjZmZmZmZmOwogIGJhY2tncm91bmQ6ICMyOGE3NDU7Cn0KCi5iYWRnZS16ZXJvIHsKICBjb2xvcjogI2ZmZmZmZjsKICBiYWNrZ3JvdW5kOiAjZGMzNTQ1Owp9Cg==">
+
+  <!-- report.json -->
+<script src="data:text/javascript;base64,ZGF0YSA9IFtdOwpleGNsdWRlZCA9IFtdOwoKICAKCiAgCgogIAoKICAKCiAgCgogIAoKICAKCiAgCgogIAoKCgoK"></script>
+
+</head>
+
+
+<body>
+
+
+  <!-- Image and text -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light border-bottom">
+    <a class="navbar-brand" href="https://github.com/lukfor/pgs-calc" target="_blank">
+      <div class="d-inline-block align-top" alt="">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMzZweCIKICAgaGVpZ2h0PSIzNnB4IgogICB2aWV3Qm94PSIwIDAgMjUuMDQ2NDEgMjUiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzMxNTQiCiAgIGlua3NjYXBlOnZlcnNpb249IjAuOTIuNCAodW5rbm93bikiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImxvZ28uc3ZnIj4KICA8ZGVmcwogICAgIGlkPSJkZWZzMzE0OCI+CiAgICA8ZmlsdGVyCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICBzdHlsZT0iY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzOnNSR0IiCiAgICAgICBpZD0iZmlsdGVyNzUyNyIKICAgICAgIHg9Ii0wLjAyNCIKICAgICAgIHdpZHRoPSIxLjA0OCIKICAgICAgIHk9Ii0wLjAyNCIKICAgICAgIGhlaWdodD0iMS4wNDgiPgogICAgICA8ZmVHYXVzc2lhbkJsdXIKICAgICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgICBzdGREZXZpYXRpb249IjAuMjI2OTQ4MyIKICAgICAgICAgaWQ9ImZlR2F1c3NpYW5CbHVyNzUyOSIgLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9ImJhc2UiCiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6em9vbT0iMC44OTA5NzQwNiIKICAgICBpbmtzY2FwZTpjeD0iOTMuMTI1NjU4IgogICAgIGlua3NjYXBlOmN5PSIyMDQuNTg5MiIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0ibW0iCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iZzkzNSIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxNjE1IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMjYiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjY1IgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIHNob3dndWlkZXM9InRydWUiCiAgICAgaW5rc2NhcGU6bWVhc3VyZS1zdGFydD0iMCwwIgogICAgIGlua3NjYXBlOm1lYXN1cmUtZW5kPSIwLDAiCiAgICAgZml0LW1hcmdpbi10b3A9IjAiCiAgICAgZml0LW1hcmdpbi1sZWZ0PSIwIgogICAgIGZpdC1tYXJnaW4tcmlnaHQ9IjAiCiAgICAgZml0LW1hcmdpbi1ib3R0b209IjAiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzE1MSI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ5LjAzMDQzOSwtNTkuOTQ3OTYxKSI+CiAgICA8ZwogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC45MDgxNjAxNSwwLDAsMC45MDY0NzczNSwyNi41ODE0MzIsMjAzLjc2NjI4KSIKICAgICAgIGlkPSJnNTI2OCIKICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6MS4xMDIxNDkxMyI+CiAgICAgIDxnCiAgICAgICAgIGlkPSJnOTM1IgogICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLjE1OTU2NDMsMCwwLDEuMTU5NTY0MywtNDEuMzAxMzg2LDEyLjIyNjkyMikiCiAgICAgICAgIGlua3NjYXBlOmV4cG9ydC14ZHBpPSI1MDAuMDE1MTQiCiAgICAgICAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSI1MDAuMDE1MTQiPgogICAgICAgIDxyZWN0CiAgICAgICAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjQwMC4zMDM4NiIKICAgICAgICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iNDAwLjMwMzg2IgogICAgICAgICAgIHJ5PSIyLjIwNjM0MjkiCiAgICAgICAgICAgcng9IjIuMjAyMjU1IgogICAgICAgICAgIHk9Ii0xNDYuODIzNzgiCiAgICAgICAgICAgeD0iNTcuNDgwMzczIgogICAgICAgICAgIGhlaWdodD0iMjIuNjk0ODMiCiAgICAgICAgICAgd2lkdGg9IjIyLjY5NDgzIgogICAgICAgICAgIGlkPSJyZWN0MTA5NiIKICAgICAgICAgICBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MC4xOTYwNzg0MztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC43NzE1MDQxNjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxO2ZpbHRlcjp1cmwoI2ZpbHRlcjc1MjcpIiAvPgogICAgICAgIDxyZWN0CiAgICAgICAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjQwMC4zMDM4NiIKICAgICAgICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iNDAwLjMwMzg2IgogICAgICAgICAgIHN0eWxlPSJvcGFjaXR5OjE7ZmlsbDojMzc0MTUwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjc3MTUwNDE2O3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICAgICAgaWQ9InJlY3QxMDk4IgogICAgICAgICAgIHdpZHRoPSIyMi42OTQ4MyIKICAgICAgICAgICBoZWlnaHQ9IjIyLjY5NDgzIgogICAgICAgICAgIHg9IjU4LjAwOTU0OCIKICAgICAgICAgICB5PSItMTQ3LjM1MjkyIgogICAgICAgICAgIHJ4PSIyLjIwMjI1NSIKICAgICAgICAgICByeT0iMi4yMDYzNDI5IiAvPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjQwMC4zMDM4NiIKICAgICAgICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iNDAwLjMwMzg2IgogICAgICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjAuOTQxMTc2NDc7c3Ryb2tlLXdpZHRoOjEuMTAyMTQ5MjUiCiAgICAgICAgICAgZD0ibSA1OS44NzE4MjIsLTEyOS4yODI0NCB2IC0yLjM2OTExIGggOS42NDE5MiA5LjY0MTkzIHYgMi4zNjkxMSAyLjM2OTA5IGggLTkuNjQxOTMgLTkuNjQxOTIgeiBtIDE3Ljk3NTgyLDAuODI5NDggYyAwLjU4MTU3LC0wLjU5OTUxIDAuMDY1NywtMi4xNDU2NSAtMC43MTU5NiwtMi4xNDU2NSAtMC41MTEzOCwwIC0xLjExNTI1LDAuNjUzODcgLTEuMTE1MjUsMS4yMDc2MiAwLDEuMTc1MjcgMS4wNjk1OCwxLjcyMzE2IDEuODMxMjEsMC45MzgwMyB6IG0gLTUuNTY4MzgsLTAuODI5NDggdiAtMC43ODk3MSBoIC01LjUzMTA0IC01LjUzMTAyIHYgMC43ODk3MSAwLjc4OTY5IGggNS41MzEwMiA1LjUzMTA0IHogbSAtMTIuNDA3NDQsLTYuNDkzMSB2IC0yLjM2OTEgaCA5LjY0MTkyIDkuNjQxOTMgdiAyLjM2OTEgMi4zNjkxIGggLTkuNjQxOTMgLTkuNjQxOTIgeiBtIDE3Ljg0MzU2LDAuOTUyNDYgYyAwLjI4NTY3LC0wLjI2MzgxIDAuMzkzODcsLTAuNTI1NDYgMC4zOTM4NywtMC45NTI0NiAwLC0wLjY0NDI2IC0wLjU0Nzk1LC0xLjMxNjE3IC0xLjA3MzM2LC0xLjMxNjE3IC0wLjQxMTgsMCAtMS4wMTk0NiwwLjc4NDUyIC0xLjAxOTQ2LDEuMzE2MTcgMCwwLjUzMTY2IDAuNjA3NjYsMS4zMTYxNiAxLjAxOTQ2LDEuMzE2MTYgMC4xNTcwOCwwIDAuNDYyODUsLTAuMTYzNjcgMC42Nzk0OSwtMC4zNjM3IHogbSAtNS40MzYxMiwtMC45NTI0NiB2IC0wLjc4OTcgaCAtNS41MzEwNCAtNS41MzEwMiB2IDAuNzg5NyAwLjc4OTcgaCA1LjUzMTAyIDUuNTMxMDQgeiBtIC0xMi40MDc0NCwtNi40OTMxIHYgLTIuMzY5MDkgaCA5LjY0MTkyIDkuNjQxOTMgdiAyLjM2OTA5IDIuMzY5MTEgaCAtOS42NDE5MyAtOS42NDE5MiB6IG0gMTcuODkxNDQsMC45MzQ2IGMgMC44OTIzOCwtMC45ODQxNCAtMC4wNiwtMi42NDg1NyAtMS4xNDAyMywtMS45OTI3OCAtMC43Mjc4MywwLjQ0MTg0IC0wLjgzMzE4LDEuNDM3NjkgLTAuMjEyNzIsMi4wMTA2NCAwLjUwNDk4LDAuNDY2MzEgMC45MTg5MSwwLjQ2MDg1IDEuMzUyOTUsLTAuMDE3OSB6IG0gLTUuNDg0LC0wLjg0Njg1IHYgLTAuODc3NDQgaCAtNS41MzEwNCAtNS41MzEwMiB2IDAuODc3NDQgMC44Nzc0NSBoIDUuNTMxMDIgNS41MzEwNCB6IgogICAgICAgICAgIGlkPSJwYXRoMTEwMCIKICAgICAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjQwMC4zMDM4NiIKICAgICAgICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iNDAwLjMwMzg2IgogICAgICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICAgICAgaWQ9InBhdGgxMTAyIgogICAgICAgICAgIGQ9Im0gNTguMDA5NzIyLC0xNDIuNTI5MjggdiA0LjA4MzQ3IDExLjc4NzkxIGMgMCwxLjEwOCAwLjg5MTg4LDEuOTk5ODggMS45OTk4OCwxLjk5OTg4IGggMTIuMDUwNDMgMy45MzA1MSBjIC0wLjQ1NzU2LC0zLjM1NzA0IC0yLjEzMzM4LC03LjAwOTA3IC00LjY3NTE3LC0xMC4wNDkgLTEuMjE0MjUsLTEuNDUyMTkgLTMuOTkyMTEsLTMuODU2MTcgLTUuNTc3NDQsLTQuODI2NTggLTIuNDk3MTcsLTEuNTI4NTMgLTUuMTQ5OTUsLTIuNTQyODcgLTcuNzI4MjEsLTIuOTk1NjggeiIKICAgICAgICAgICBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6I2VjZjBmMTtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC43NzE1MDQxNjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiAvPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjQwMC4zMDM4NiIKICAgICAgICAgICBpbmtzY2FwZTpleHBvcnQteGRwaT0iNDAwLjMwMzg2IgogICAgICAgICAgIGlkPSJwYXRoMTEwNCIKICAgICAgICAgICBkPSJtIDU4LjAwOTczMiwtMTQyLjUyOTI4IHYgNC4wODM0NyBjIDAuODI1MzksMC4xOTEyNyAxLjU5MjQ3LDAuMzk2MjIgMS44NzA2OCwwLjUwNTkxIDAuMzU1NzgsMC4xNDAyNiAwLjc2NTc1LDAuMjU2ODkgMC45MTEwNiwwLjI1ODkgMC44NDIwOCwwLjAxMTYgMy45NzQxLDIuMDk5ODEgNi4yMzQ3Niw0LjE1Njg0IDIuNjg2MDQsMi40NDQxMiA0LjQ3MTc5LDUuNzUxNDYgNS4wMzM4LDguODY2MTQgaCAzLjkzMDUxIGMgLTAuNDU3NTYsLTMuMzU3MDQgLTIuMTMzMzgsLTcuMDA5MDggLTQuNjc1MTcsLTEwLjA0OTAxIC0xLjIxNDI1LC0xLjQ1MjE5IC0zLjk5MjEsLTMuODU2MTcgLTUuNTc3NDMsLTQuODI2NTggLTIuNDk3MTcsLTEuNTI4NTMgLTUuMTQ5OTcsLTIuNTQyODYgLTcuNzI4MjEsLTIuOTk1NjcgeiIKICAgICAgICAgICBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6I2YzOWMxMjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC43NzE1MDQxNjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIgogICAgICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIC8+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9IjAuMDYxMzEyODc1IgogICAgICAgICAgIHNvZGlwb2RpOm5vZGV0eXBlcz0iY2NjY2MiCiAgICAgICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgICAgICBpZD0icGF0aDExMTQiCiAgICAgICAgICAgZD0ibSA2Ny4xMTI3NTYsLTEzMi4xODcxNiAtNS44MzM3MjYsNi42MTcyIC0yLjQ2NDY4NiwtMi4xMjAzMiA3LjYzNDgxMiwtNS4xMzAwMyBjIDIuODEwNjUyLC0xLjcwNjkgMi42NDA0MzQsLTEuODgyODkgMC42NjM2LDAuNjMzMTUgeiIKICAgICAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXg9IjAuMjU3NDI5OCIKICAgICAgICAgICBzdHlsZT0iZmlsbDojNWM2ZDdlO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjY3OTk3MDQ0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiIC8+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6I2MwMzkyYjtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC43NzE1MDQxNjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIgogICAgICAgICAgIGQ9Im0gNzMuMzc2OTU4LC0xMzEuNzk4IC0zLjA5NCwyLjM1ODg1IGMgMC44ODIwODcsMS41NTAzNSAxLjQ4OTkyMiwzLjE5MDY3IDEuNzc2OTAzLDQuNzgxMTMgaCAzLjkzMDY4MSBjIC0wLjMxODgzNiwtMi4zMzkyNCAtMS4yMzA4OCwtNC44MjExNyAtMi42MTM1ODQsLTcuMTM5OTggeiIKICAgICAgICAgICBpZD0icGF0aDExMTYiCiAgICAgICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgICAgICA8cGF0aAogICAgICAgICAgIHN0eWxlPSJvcGFjaXR5OjE7ZmlsbDojMWZiYjM4O2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjc3MTUwNDE2O3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICAgICAgZD0ibSA1OC4wMDk3MzIsLTE0Mi41MjkzMSB2IDQuMDgzNSBjIDAuODI1MzksMC4xOTEyNyAxLjU5MjQyMSwwLjM5NjIgMS44NzA2MzEsMC41MDU4OSAwLjM1NTc4LDAuMTQwMjYgMC43NjU0NjksMC4yNTcwOCAwLjkxMDc3OSwwLjI1OTA5IDAuNDE1MzE0LDAuMDA2IDEuMzg5ODg0LDAuNTE5MDcgMi41Mzk5NzYsMS4yODIxOCBsIDAuNjg2MDI5LC00LjA5MDg4IGMgLTEuOTc2MzU1LC0wLjk5OTczIC00LjAxMzc5NiwtMS42ODk2NSAtNi4wMDc0MTUsLTIuMDM5NzggeiIKICAgICAgICAgICBpZD0icGF0aDExMjMiCiAgICAgICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgICAgICA8cGF0aAogICAgICAgICAgIHN0eWxlPSJvcGFjaXR5OjE7ZmlsbDojNWM2ZDdlO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjc3MTUwNDE2O3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICAgICAgZD0ibSA1OC41NDkxNzUsLTEyOC41NDE3MyBhIDMuMDQwODQ5OCwzLjA0NjQ5NDkgMCAwIDAgLTAuNTY1ODAyLDAuMDU1NiB2IDEuODEwNjggYyAwLDEuMTA4IDAuODkxNjksMS45OTk5NiAxLjk5OTY5LDEuOTk5OTYgaCAxLjQ5MTc5NCBhIDMuMDQwODQ5OCwzLjA0NjQ5NDkgMCAwIDAgMC4xMTUzMiwtMC44MTk1NSAzLjA0MDg0OTgsMy4wNDY0OTQ5IDAgMCAwIC0zLjA0MTAwMiwtMy4wNDY2NSB6IgogICAgICAgICAgIGlkPSJwYXRoMTEyOCIKICAgICAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgogICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZwogICAgICAgaWQ9Imc1OTI5IgogICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDoyLjc3Mzg0MjMzIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4wNDU2NzQxNCwtMC4wODA0MjI0NSwwLjA4OTkzNTg5LDAuMDQwODQyNzIsLTM4NS4yOTU2NiwtMjkuMTA0MDk1KSIgLz4KICAgIDxnCiAgICAgICBpZD0iZzU5MzEiCiAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjIuNzczODQyMzMiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjA0NTY3NDE0LC0wLjA4MDQyMjQ1LDAuMDg5OTM1ODksMC4wNDA4NDI3MiwtMzg1LjI5NTY2LC0yOS4xMDQwOTUpIiAvPgogICAgPGcKICAgICAgIGlkPSJnNTkzMyIKICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6Mi43NzM4NDIzMyIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ1Njc0MTQsLTAuMDgwNDIyNDUsMC4wODk5MzU4OSwwLjA0MDg0MjcyLC0zODUuMjk1NjYsLTI5LjEwNDA5NSkiIC8+CiAgICA8ZwogICAgICAgaWQ9Imc1OTM1IgogICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDoyLjc3Mzg0MjMzIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4wNDU2NzQxNCwtMC4wODA0MjI0NSwwLjA4OTkzNTg5LDAuMDQwODQyNzIsLTM4NS4yOTU2NiwtMjkuMTA0MDk1KSIgLz4KICAgIDxnCiAgICAgICBpZD0iZzU5MzciCiAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjIuNzczODQyMzMiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjA0NTY3NDE0LC0wLjA4MDQyMjQ1LDAuMDg5OTM1ODksMC4wNDA4NDI3MiwtMzg1LjI5NTY2LC0yOS4xMDQwOTUpIiAvPgogICAgPGcKICAgICAgIGlkPSJnNTkzOSIKICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6Mi43NzM4NDIzMyIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ1Njc0MTQsLTAuMDgwNDIyNDUsMC4wODk5MzU4OSwwLjA0MDg0MjcyLC0zODUuMjk1NjYsLTI5LjEwNDA5NSkiIC8+CiAgICA8ZwogICAgICAgaWQ9Imc1OTQxIgogICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDoyLjc3Mzg0MjMzIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4wNDU2NzQxNCwtMC4wODA0MjI0NSwwLjA4OTkzNTg5LDAuMDQwODQyNzIsLTM4NS4yOTU2NiwtMjkuMTA0MDk1KSIgLz4KICAgIDxnCiAgICAgICBpZD0iZzU5NDMiCiAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjIuNzczODQyMzMiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjA0NTY3NDE0LC0wLjA4MDQyMjQ1LDAuMDg5OTM1ODksMC4wNDA4NDI3MiwtMzg1LjI5NTY2LC0yOS4xMDQwOTUpIiAvPgogICAgPGcKICAgICAgIGlkPSJnNTk0NSIKICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6Mi43NzM4NDIzMyIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ1Njc0MTQsLTAuMDgwNDIyNDUsMC4wODk5MzU4OSwwLjA0MDg0MjcyLC0zODUuMjk1NjYsLTI5LjEwNDA5NSkiIC8+CiAgICA8ZwogICAgICAgaWQ9Imc1OTQ3IgogICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDoyLjc3Mzg0MjMzIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4wNDU2NzQxNCwtMC4wODA0MjI0NSwwLjA4OTkzNTg5LDAuMDQwODQyNzIsLTM4NS4yOTU2NiwtMjkuMTA0MDk1KSIgLz4KICAgIDxnCiAgICAgICBpZD0iZzU5NDkiCiAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjIuNzczODQyMzMiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjA0NTY3NDE0LC0wLjA4MDQyMjQ1LDAuMDg5OTM1ODksMC4wNDA4NDI3MiwtMzg1LjI5NTY2LC0yOS4xMDQwOTUpIiAvPgogICAgPGcKICAgICAgIGlkPSJnNTk1MSIKICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6Mi43NzM4NDIzMyIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ1Njc0MTQsLTAuMDgwNDIyNDUsMC4wODk5MzU4OSwwLjA0MDg0MjcyLC0zODUuMjk1NjYsLTI5LjEwNDA5NSkiIC8+CiAgICA8ZwogICAgICAgaWQ9Imc1OTUzIgogICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDoyLjc3Mzg0MjMzIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC4wNDU2NzQxNCwtMC4wODA0MjI0NSwwLjA4OTkzNTg5LDAuMDQwODQyNzIsLTM4NS4yOTU2NiwtMjkuMTA0MDk1KSIgLz4KICAgIDxnCiAgICAgICBpZD0iZzU5NTUiCiAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjIuNzczODQyMzMiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjA0NTY3NDE0LC0wLjA4MDQyMjQ1LDAuMDg5OTM1ODksMC4wNDA4NDI3MiwtMzg1LjI5NTY2LC0yOS4xMDQwOTUpIiAvPgogICAgPGcKICAgICAgIGlkPSJnNTk1NyIKICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6Mi43NzM4NDIzMyIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMDQ1Njc0MTQsLTAuMDgwNDIyNDUsMC4wODk5MzU4OSwwLjA0MDg0MjcyLC0zODUuMjk1NjYsLTI5LjEwNDA5NSkiIC8+CiAgICA8Y2lyY2xlCiAgICAgICBjeT0iLTQzLjk2Njk1NyIKICAgICAgIGN4PSItMjE3LjY0NTI5IgogICAgICAgaWQ9ImNpcmNsZTcwNTMiCiAgICAgICBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6IzM3NDE1MDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC45NjQ5OTk5MTtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIgogICAgICAgcj0iMCIgLz4KICA8L2c+CiAgPHN0eWxlCiAgICAgaWQ9InN0eWxlNzE5NiIKICAgICB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6Izc3QjNENDt9Cgkuc3Qxe29wYWNpdHk6MC4yO30KCS5zdDJ7ZmlsbDojMjMxRjIwO30KCS5zdDN7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPC9zdmc+Cg==">
+      </div>
+      &nbsp;PGS-Server 1.6.1
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="show-command-button">
+            Command
+          </a>
+        </li>
+        
+        
+        
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="wrapper">
+    <div class="bg-light border-right" id="sidebar-wrapper">
+  <div class="input-group sidebar-search border-bottom ">
+    <input class="field form-control mx-2 mb-3" id="s" name="s" type="text" value="" placeholder="Search by ID or trait" autocomplete="off">
+  </div>
+  <div class="list-group mx-2 sidebar-list" role="tablist">
+   	  <a data-toggle="list" href="#samples" data-samples="samples" role="tab"
+        class="list-group-item list-group-item-action my-1 active">
+        Samples
+      </a>
+    
+      <a data-toggle="list" href="#score0" data-score="score0" role="tab" data-meta="PGS000007, Breast Cancer"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000007
+        
+        <br><small>Breast Cancer</small>
+      </a>
+    
+      <a data-toggle="list" href="#score1" data-score="score1" role="tab" data-meta="PGS000034, Adult Body Mass Index"
+        class="list-group-item list-group-item-action my-1 coverage-zero ">
+        
+        PGS000034
+        
+        <br><small>Adult Body Mass Index</small>
+      </a>
+    
+      <a data-toggle="list" href="#score2" data-score="score2" role="tab" data-meta="PGS000065, Low density lipoprotein (LDL) cholesterol"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000065
+        
+        <br><small>Low density lipoprotein (LDL) cholesterol</small>
+      </a>
+    
+      <a data-toggle="list" href="#score3" data-score="score3" role="tab" data-meta="PGS000078, Lung cancer"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000078
+        
+        <br><small>Lung cancer</small>
+      </a>
+    
+      <a data-toggle="list" href="#score4" data-score="score4" role="tab" data-meta="PGS000297, Height"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000297
+        
+        <br><small>Height</small>
+      </a>
+    
+      <a data-toggle="list" href="#score5" data-score="score5" role="tab" data-meta="PGS000300, Heart rate"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000300
+        
+        <br><small>Heart rate</small>
+      </a>
+    
+      <a data-toggle="list" href="#score6" data-score="score6" role="tab" data-meta="PGS000368, Colorectal cancer"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000368
+        
+        <br><small>Colorectal cancer</small>
+      </a>
+    
+      <a data-toggle="list" href="#score7" data-score="score7" role="tab" data-meta="PGS000385, Pancreatic cancer"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000385
+        
+        <br><small>Pancreatic cancer</small>
+      </a>
+    
+      <a data-toggle="list" href="#score8" data-score="score8" role="tab" data-meta="PGS000578, Cancer of prostate"
+        class="list-group-item list-group-item-action my-1 coverage-high ">
+        
+        PGS000578
+        
+        <br><small>Cancer of prostate</small>
+      </a>
+    
+  </div>
+</div>
+
+
+    <div id="page-content-wrapper">
+
+      <div class="container-fluid">
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="samples" role="tabpanel">
+              <h3 class="mt-4">Samples</h3>
+<hr>
+<h5>General</h5>
+<ul>
+
+  
+    <li>Samples: 2,318</li>
+  
+
+</ul>
+<h5>Populations</h5>
+
+<ul>
+
+  <li>European: 832 (35.89%)</li>
+
+  <li>East Asian: 588 (25.37%)</li>
+
+  <li>African: 525 (22.65%)</li>
+
+  <li>Hispanic or Latin American: 149 (6.43%)</li>
+
+  <li>South Asian: 114 (4.92%)</li>
+
+  <li>Unknown: 90 (3.88%)</li>
+
+  <li>Greater Middle Eastern: 20 (0.86%)</li>
+
+</ul>
+
+
+<div id="population-plot"></div>
+
+            </div>
+
+          
+        <div class="tab-pane " id="score0" role="tabpanel">
+          <h3 class="mt-4">PGS000007</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 3,820</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Breast Cancer
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0000305" target ="_blank">EFO_0000305</a>: breast carcinoma</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 158,648</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 100%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1016/j.ajhg.2018.11.002" target="_blank">Mavaddat N et.al, Am J Hum Genet (2018-12-13)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000007" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 3,820 (100%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score1" role="tabpanel">
+          <h3 class="mt-4">PGS000034</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 97</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Adult Body Mass Index
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0004340" target ="_blank">EFO_0004340</a>: body mass index</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 238,944</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 99.1%</li>
+                    
+                      <li>Hispanic or Latin American: 0.5%</li>
+                    
+                      <li>African: 0.4%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.2337/db17-1156" target="_blank">Song M et.al, Diabetes (2017-12-06)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000034" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 0 (0%) <span class="badge badge-zero">zero</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score2" role="tabpanel">
+          <h3 class="mt-4">PGS000065</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 103</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Low density lipoprotein (LDL) cholesterol
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0004611" target ="_blank">EFO_0004611</a>: low density lipoprotein cholesterol measurement</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 331,368</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 81.6%</li>
+                    
+                      <li>South Asian: 9.2%</li>
+                    
+                      <li>African: 5.1%</li>
+                    
+                      <li>East Asian: 2.5%</li>
+                    
+                      <li>Hispanic or Latin American: 1.5%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1038/s41467-019-12026-7" target="_blank">Kuchenbaecker K et.al, Nat Commun (2019-09-24)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000065" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 103 (100%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score3" role="tabpanel">
+          <h3 class="mt-4">PGS000078</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 109</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Lung cancer
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0001071" target ="_blank">EFO_0001071</a>: lung carcinoma</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 183,537</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 100%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1038/s41467-021-21288-z" target="_blank">Graff RE et.al, Nat Commun (2021-02-12)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000078" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 108 (99.08%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score4" role="tabpanel">
+          <h3 class="mt-4">PGS000297</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 3,290</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Height
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0004339" target ="_blank">EFO_0004339</a>: body height</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 693,529</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 65.8%</li>
+                    
+                      <li>Unknown: 34.2%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1161/circgen.119.002775" target="_blank">Xie T et.al, Circ Genom Precis Med (2020-06-11)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000297" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 3,278 (99.64%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score5" role="tabpanel">
+          <h3 class="mt-4">PGS000300</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 80</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Heart rate
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0004351" target ="_blank">EFO_0004351</a>: resting heart rate</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 238,703</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 97.3%</li>
+                    
+                      <li>Additional Asian Ancestries: 1%</li>
+                    
+                      <li>African: 0.7%</li>
+                    
+                      <li>Unknown: 0.6%</li>
+                    
+                      <li>Additional Diverse Ancestries: 0.3%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1161/circgen.119.002775" target="_blank">Xie T et.al, Circ Genom Precis Med (2020-06-11)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000300" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 80 (100%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score6" role="tabpanel">
+          <h3 class="mt-4">PGS000368</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 74</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Colorectal cancer
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0005842" target ="_blank">EFO_0005842</a>: colorectal cancer</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 63,920</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 100%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1016/j.ajhg.2020.08.025" target="_blank">Fritsche LG et.al, Am J Hum Genet (2020-09-28)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000368" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 74 (100%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score7" role="tabpanel">
+          <h3 class="mt-4">PGS000385</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 17</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Pancreatic cancer
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0002618" target ="_blank">EFO_0002618</a>: pancreatic carcinoma</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 46,491</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 100%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1016/j.ajhg.2020.08.025" target="_blank">Fritsche LG et.al, Am J Hum Genet (2020-09-28)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000385" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 17 (100%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+        <div class="tab-pane " id="score8" role="tabpanel">
+          <h3 class="mt-4">PGS000578</h3>
+          <hr>
+          
+          <h5>Reference score</h5>
+          <ul class="text-small">
+            <li>Variants: 117</li>
+            <li>Variants ignored: 0</li>
+            
+              <li>
+                Trait: Cancer of prostate
+              </li>
+              
+              <li>Mapped Trait(s):
+                <ul>
+                  
+                  <li><a href="http://www.ebi.ac.uk/efo/EFO_0001663" target ="_blank">EFO_0001663</a>: prostate carcinoma</li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+                <li>Samples: 644,688</li>
+                <li>Population:
+                  <ul>
+                    
+                      <li>European: 100%</li>
+                    
+                  </ul>
+                </li>
+              
+              
+              <li>Publication: <a href="https://doi.org/10.1016/j.ajhg.2020.08.025" target="_blank">Fritsche LG et.al, Am J Hum Genet (2020-09-28)</a></li>
+              
+              
+                <li>View in <a href="https://www.pgscatalog.org/score/PGS000578" target="_blank">PGS-Catalog</a></li>
+              
+            
+          </ul>
+          <!--<small class="text-muted pull-right">All meta obtained from <a href="https://www.pgscatalog.org">PGS-Catalog</a></small>-->
+          <h5>Target study</h5>
+          <ul>
+            <li>Coverage: 111 (94.87%) <span class="badge badge-high">high</span> </li>
+            
+          </ul>
+
+          
+        </div>
+      
+
+  </div>
+    </div>
+
+      <div class="row" id="row-plots">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-header">
+        Distribution
+      </div>
+      <div class="card-body mx-0 my-0">
+        <div id="plot" style="height:300px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        <span id="selection-header">Selection (0)</span>
+        <div class="btn-group float-right" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-secondary-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Actions
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#" id="highlight-selection-button">Highlight all</a>
+            <a class="dropdown-item" href="#" id="unhighlight-selection-button">Un-highlight all</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-body" style="padding: 0px;">
+        <div style="height:300px; overflow-y: scroll;">
+          <table class="table table-sm table-striped" id="selection-table">
+            <thead>
+              <tr>
+                <th scope="col">Sample</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- https://code.jquery.com/jquery-3.5.1.slim.min.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <!-- https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- https://cdn.plot.ly/plotly-latest.min.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+
+  <!-- report.js -->
+<script src="data:text/javascript;base64,ZnVuY3Rpb24gY3JlYXRlUGxvdChzZWxlY3RlZERhdGEsIGhpZ2hsaWdodGVkU2FtcGxlcywgZXhjbHVkZWREYXRhKSB7CgogIC8vaGlzdG9ncmFtIG9mIHNjb3JlCiAgdmFyIHBsb3REYXRhID0gW107CgogIHBsb3REYXRhLnB1c2goewogICAgeDogc2VsZWN0ZWREYXRhLAogICAgdHlwZTogJ2hpc3RvZ3JhbScsCiAgICBuYW1lOiAnSW5jbHVkZWQgU2FtcGxlcycsCiAgICBvcmllbnRhdGlvbjogJ3YnLAogICAgYXV0b2JpbjogdHJ1ZSwKICAgIG1hcmtlcjogewogICAgICBjb2xvcjogJyMwMDdiZmYnLAogICAgICBsaW5lOiB7CiAgICAgICAgY29sb3I6ICd3aGl0ZScsCiAgICAgICAgd2lkdGg6IDEKICAgICAgfQogICAgfQogIH0pOwoKICBpZiAoZXhjbHVkZWREYXRhICYmIGV4Y2x1ZGVkRGF0YS5sZW5ndGggPiAwKSB7CgogICAgcGxvdERhdGEucHVzaCh7CiAgICAgIHg6IGV4Y2x1ZGVkRGF0YSwKICAgICAgdHlwZTogJ2hpc3RvZ3JhbScsCiAgICAgIG5hbWU6ICdFeGNsdWRlZCBTYW1wbGVzJywKICAgICAgb3JpZW50YXRpb246ICd2JywKICAgICAgbWFya2VyOiB7CiAgICAgICAgY29sb3I6ICcjY2NjY2NjJywKICAgICAgICBsaW5lOiB7CiAgICAgICAgICBjb2xvcjogJ3doaXRlJywKICAgICAgICAgIHdpZHRoOiAxCiAgICAgICAgfQogICAgICB9CiAgICB9KTsKICB9CgogIC8vc2NhdHRlciBwbG90IG9mIHNlbGVjdGVkIHNhbXBsZXMKICBpZiAoaGlnaGxpZ2h0ZWRTYW1wbGVzICYmIGhpZ2hsaWdodGVkU2FtcGxlcy5sZW5ndGggPiAwKSB7CiAgICB2YXIgeCA9IFtdOwogICAgdmFyIHkgPSBbXTsKICAgIHZhciB0ZXh0ID0gW107CiAgICBmb3IgKHZhciBpID0gMDsgaSA8IGhpZ2hsaWdodGVkU2FtcGxlcy5sZW5ndGg7IGkrKykgewogICAgICB4LnB1c2goc2VsZWN0ZWREYXRhW2hpZ2hsaWdodGVkU2FtcGxlc1tpXV0pOwogICAgICB5LnB1c2goMCk7CiAgICAgIHRleHQucHVzaChzYW1wbGVzW2hpZ2hsaWdodGVkU2FtcGxlc1tpXV0pOwogICAgfQogICAgcGxvdERhdGEucHVzaCh7CiAgICAgIHg6IHgsCiAgICAgIHk6IHksCiAgICAgIHR5cGU6ICdzY2F0dGVyJywKICAgICAgbW9kZTogJ21hcmtlcnMnLAogICAgICBuYW1lOiAnSGlnaGxpZ2h0ZWQgU2FtcGxlcycsCiAgICAgIHRleHQ6IHRleHQsCiAgICAgIG1hcmtlcjogewogICAgICAgIGNvbG9yOiAncmVkJwogICAgICB9CiAgICB9KTsKICB9CgogIHJldHVybiBwbG90RGF0YTsKCn07CgpmdW5jdGlvbiBjcmVhdGVQbG90TGF5b3V0KCkgewogIHJldHVybiB7CiAgICBzaG93bGVnZW5kOiB0cnVlLAogICAgZHJhZ21vZGU6ICdzZWxlY3QnLAogICAgaG92ZXJtb2RlOiAneCcsCiAgICBtYXJnaW46IHsKICAgICAgbDogNTAsCiAgICAgIHI6IDUwLAogICAgICBiOiA1MCwKICAgICAgdDogMCwKICAgICAgcGFkOiA0CiAgICB9LAogICAgeGF4aXM6IHsKICAgICAgdGl0bGU6ICdTY29yZScKICAgIH0sCiAgICB5YXhpczogewogICAgICB0aXRsZTogJ0NvdW50JwogICAgfSwKICAgIGJhcmdhcDogMCwKICAgIGJhcm1vZGU6ICJzdGFjayIKICB9Owp9OwoKZnVuY3Rpb24gdXBkYXRlU2VsZWN0aW9uKGV2ZW50RGF0YSkgewogIHZhciBzZWxlY3Rpb24gPSAwOwogIHZhciB0YWJsZSA9ICQoJyNzZWxlY3Rpb24tdGFibGUgdGJvZHknKTsKICB2YXIgcm93cyA9ICcnOwogIHNlbGVjdGVkU2FtcGxlcyA9IFtdOwogIGV2ZW50RGF0YS5wb2ludHMuZm9yRWFjaChmdW5jdGlvbihwdCkgewogICAgaWYgKHB0LnBvaW50SW5kaWNlcykgewogICAgICBzZWxlY3Rpb24gKz0gcHQucG9pbnRJbmRpY2VzLmxlbmd0aDsKICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBwdC5wb2ludEluZGljZXMubGVuZ3RoOyBpKyspIHsKICAgICAgICB2YXIgaW5kZXggPSBwdC5wb2ludEluZGljZXNbaV07CiAgICAgICAgc2VsZWN0ZWRTYW1wbGVzLnB1c2goaW5kZXgpOwogICAgICAgIHJvd3MgKz0gJzx0cj48dGQ+JyArIHNhbXBsZXNbaW5kZXhdICsgJzwvdGQ+PHRkPicgKyBzZWxlY3RlZERhdGFbaW5kZXhdICsgJzwvdGQ+PC90cj4nOwogICAgICB9CiAgICB9CiAgfSk7CiAgdGFibGUuaHRtbChyb3dzKTsKICAkKCcjc2VsZWN0aW9uLWhlYWRlcicpLmh0bWwoJ1NlbGVjdGlvbiAoJyArIHNlbGVjdGlvbiArICcpJyk7Cn07CgpmdW5jdGlvbiBoaWdobGlnaHRBbGxTZWxlY3RlZFNhbXBsZXMoKSB7CiAgZm9yICh2YXIgaSA9IDA7IGkgPCBzZWxlY3RlZFNhbXBsZXMubGVuZ3RoOyBpKyspIHsKICAgIHZhciBzYW1wbGUgPSBzZWxlY3RlZFNhbXBsZXNbaV07CiAgICBpZiAoIWhpZ2hsaWdodGVkU2FtcGxlcy5pbmNsdWRlcyhzYW1wbGUpKSB7CiAgICAgIGhpZ2hsaWdodGVkU2FtcGxlcy5wdXNoKHNhbXBsZSk7CiAgICB9CiAgfQogIHVwZGF0ZVBsb3RzKCk7CiAgdXBkYXRlSGlnaGxpZ2h0U2FtcGxlKCk7Cn0KCmZ1bmN0aW9uIHVuSGlnaGxpZ2h0QWxsU2VsZWN0ZWRTYW1wbGVzKCkgewogIGZvciAodmFyIGkgPSAwOyBpIDwgc2VsZWN0ZWRTYW1wbGVzLmxlbmd0aDsgaSsrKSB7CiAgICB2YXIgc2FtcGxlID0gc2VsZWN0ZWRTYW1wbGVzW2ldOwogICAgdmFyIGluZGV4ID0gaGlnaGxpZ2h0ZWRTYW1wbGVzLmluZGV4T2Yoc2FtcGxlKTsKICAgIGlmIChpbmRleCA+IC0xKSB7CiAgICAgIGhpZ2hsaWdodGVkU2FtcGxlcy5zcGxpY2UoaW5kZXgsIDEpOwogICAgfQogIH0KICB1cGRhdGVQbG90cygpOwogIHVwZGF0ZUhpZ2hsaWdodFNhbXBsZSgpOwp9CgpmdW5jdGlvbiBjbGVhckhpZ2hsaWdodGVkU2FtcGxlcygpIHsKICBoaWdobGlnaHRlZFNhbXBsZXMgPSBbXTsKICB1cGRhdGVQbG90cygpOwogIHVwZGF0ZUhpZ2hsaWdodFNhbXBsZSgpOwp9CgpmdW5jdGlvbiBhZGRIaWdobGlnaHRlZFNhbXBsZXMoKSB7CgogIGJvb3Rib3gucHJvbXB0KHsKICAgIHRpdGxlOiAnU2FtcGxlcycsCiAgICBtZXNzYWdlOiAnPHA+PHNtYWxsIGNsYXNzPSJ0ZXh0LW11dGVkIj5UbyBzcGVjaWZ5IG1vcmUgdGhhbiBvbmUgc2FtcGxlIElELCBwbGVhc2Ugc2VwYXJhdGUgdGhlIElEcyB3aXRoIGEgbmV3IGxpbmUuPC9zbWFsbD48L3A+JywKICAgIGlucHV0VHlwZTogJ3RleHRhcmVhJywKICAgIGNhbGxiYWNrOiBmdW5jdGlvbihyZXN1bHQpIHsKICAgICAgaWYgKHJlc3VsdCkgewogICAgICAgIHZhciBsaW5lcyA9IHJlc3VsdC5tYXRjaCgvW15cclxuXSsvZyk7CiAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBsaW5lcy5sZW5ndGg7IGkrKykgewogICAgICAgICAgdmFyIHNhbXBsZSA9IGxpbmVzW2ldOwogICAgICAgICAgdmFyIGluZGV4ID0gc2FtcGxlcy5pbmRleE9mKHNhbXBsZSk7CiAgICAgICAgICBpZiAoaW5kZXggPiAtMSkgewogICAgICAgICAgICBpZiAoIWhpZ2hsaWdodGVkU2FtcGxlcy5pbmNsdWRlcyhzYW1wbGUpKSB7CiAgICAgICAgICAgICAgaGlnaGxpZ2h0ZWRTYW1wbGVzLnB1c2goaW5kZXgpOwogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIHVwZGF0ZVBsb3RzKCk7CiAgICAgICAgdXBkYXRlSGlnaGxpZ2h0U2FtcGxlKCk7CiAgICAgIH0KICAgIH0KICB9KTsKCn0KCmZ1bmN0aW9uIHVwZGF0ZUhpZ2hsaWdodFNhbXBsZSgpIHsKICAkKCcjaGlnaGxpZ2h0LXNhbXBsZXMtaGVhZGVyJykuaHRtbCgnSGlnaGxpZ2h0ZWQgU2FtcGxlcyAoJyArIGhpZ2hsaWdodGVkU2FtcGxlcy5sZW5ndGggKyAnKScpOwp9CgpmdW5jdGlvbiB1cGRhdGVTY29yZShlKSB7CgogIGlmIChkYXRhID09IHVuZGVmaW5lZCkgewogICAgcmV0dXJuOwogIH0KCiAgdmFyIHNjb3JlID0gJCh0aGlzKS5kYXRhKCdzY29yZScpOwogIHNlbGVjdGVkRGF0YSA9IGRhdGFbc2NvcmVdOwogIHNlbGVjdGVkRXhjbHVkZWQgPSBleGNsdWRlZFtzY29yZV07CiAgaWYgKHNlbGVjdGVkRGF0YSkgewogICAgJCgnI3Jvdy1wbG90cycpLnNob3coKTsKICAgIC8vY2xlYXIgdGFibGUKICAgIHZhciB0YWJsZSA9ICQoJyNzZWxlY3Rpb24tdGFibGUgdGJvZHknKTsKICAgIHRhYmxlLmh0bWwoJycpOwogICAgc2VsZWN0ZWRTYW1wbGVzID0gW107CiAgICAkKCcjc2VsZWN0aW9uLWhlYWRlcicpLmh0bWwoJ1NlbGVjdGlvbiAoJyArIDAgKyAnKScpOwogICAgdXBkYXRlUGxvdHMoKTsKCiAgfSBlbHNlIHsKICAgICQoJyNyb3ctcGxvdHMnKS5oaWRlKCk7CiAgfQp9CgpmdW5jdGlvbiBmaWx0ZXJTY29yZXMoZSkgewogIHZhciBpbnB1dCA9ICQodGhpcykudmFsKCkKICB2YXIgZmlsdGVyID0gaW5wdXQudG9VcHBlckNhc2UoKQogICQoJy5saXN0LWdyb3VwIC5saXN0LWdyb3VwLWl0ZW0nKS5lYWNoKGZ1bmN0aW9uKCkgewogICAgdmFyIGFuY2hvciA9ICQodGhpcykKICAgIGlmIChhbmNob3IuZGF0YSgnbWV0YScpID09IHVuZGVmaW5lZCB8fCBhbmNob3IuZGF0YSgnbWV0YScpLnRvVXBwZXJDYXNlKCkuaW5kZXhPZihmaWx0ZXIpID4gLTEpIHsKICAgICAgYW5jaG9yLnJlbW92ZUNsYXNzKCdkLW5vbmUnKQogICAgfSBlbHNlIHsKICAgICAgYW5jaG9yLmFkZENsYXNzKCdkLW5vbmUnKTsKICAgIH0KICB9KTsKfQoKZnVuY3Rpb24gdXBkYXRlUGxvdHMoKSB7CiAgdmFyIHBsb3REYXRhID0gY3JlYXRlUGxvdChzZWxlY3RlZERhdGEsIGhpZ2hsaWdodGVkU2FtcGxlcywgc2VsZWN0ZWRFeGNsdWRlZCk7CiAgdmFyIGxheW91dCA9IGNyZWF0ZVBsb3RMYXlvdXQoKTsKICBQbG90bHkucmVhY3QoJ3Bsb3QnLCBwbG90RGF0YSwgbGF5b3V0LCB7CiAgICBkaXNwbGF5TW9kZUJhcjogZmFsc2UKICB9KTsKfQoKZnVuY3Rpb24gc2hvd0NvbW1hbmQoKSB7CiAgCiAgYm9vdGJveC5hbGVydCgnPHByZT5wZ3MtY2FsYyByZXBvcnRcPGJyPiAgLS1pbmZvXDxicj4gIHNjb3Jlcy5pbmZvXDxicj4gIC0tbWV0YVw8YnI+ICBzY29yZXMubWV0YS5qc29uXDxicj4gIC0tc2FtcGxlc1w8YnI+ICBlc3RpbWF0ZWQtcG9wdWxhdGlvbi50eHRcPGJyPiAgLS1vdXRcPGJyPiAgc2NvcmVzLmh0bWw8L3ByZT4nKTsKICAKfQoKZnVuY3Rpb24gc2hvd1BvcHVsYXRpb24oKXsKICAKCXZhciBkYXRhID0gW3sKCSAgdmFsdWVzOiBbODMyLDU4OCw1MjUsMTQ5LDExNCw5MCwyMF0sCgkgIGxhYmVsczogWyJFdXJvcGVhbiIsIkVhc3QgQXNpYW4iLCJBZnJpY2FuIiwiSGlzcGFuaWMgb3IgTGF0aW4gQW1lcmljYW4iLCJTb3V0aCBBc2lhbiIsIlVua25vd24iLCJHcmVhdGVyIE1pZGRsZSBFYXN0ZXJuIl0sCiAgICBtYXJrZXI6IHsKICAgICAgY29sb3JzOiBbIiMwMDk5RTYiLCIjRkY5OUU2IiwiI0ZGNjYwMCIsIiM4MDAwODAiLCIjRjkwMDI2IiwiI0I1QjVCNSIsIiNEQkVFMDYiXQogICAgfSwKCSAgdHlwZTogJ3BpZScKCX1dOwoKCXZhciBsYXlvdXQgPSB7CgkgIGhlaWdodDogNDAwLAoJICB3aWR0aDogNTAwCgl9OwoKCVBsb3RseS5uZXdQbG90KCdwb3B1bGF0aW9uLXBsb3QnLCBkYXRhLCBsYXlvdXQpOwogIAp9CgokKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpIHsKCiAgLy9ldmVudCBoYW5kbGVyCiAgJCgnI3MnKS5vbignaW5wdXQnLCBmaWx0ZXJTY29yZXMpOwogICQoJy5saXN0LWdyb3VwLWl0ZW0nKS5vbignY2xpY2snLCB1cGRhdGVTY29yZSk7CiAgJCgnI2hpZ2hsaWdodC1zZWxlY3Rpb24tYnV0dG9uJykub24oJ2NsaWNrJywgaGlnaGxpZ2h0QWxsU2VsZWN0ZWRTYW1wbGVzKTsKICAkKCcjdW5oaWdobGlnaHQtc2VsZWN0aW9uLWJ1dHRvbicpLm9uKCdjbGljaycsIHVuSGlnaGxpZ2h0QWxsU2VsZWN0ZWRTYW1wbGVzKTsKICAkKCcjY2xlYXItaGlnaGxpZ2h0ZWQtc2FtcGxlcy1idXR0b24nKS5vbignY2xpY2snLCBjbGVhckhpZ2hsaWdodGVkU2FtcGxlcyk7CiAgJCgnI2FkZC1oaWdobGlnaHRlZC1zYW1wbGVzLWJ1dHRvbicpLm9uKCdjbGljaycsIGFkZEhpZ2hsaWdodGVkU2FtcGxlcyk7CiAgJCgnI3Nob3ctY29tbWFuZC1idXR0b24nKS5vbignY2xpY2snLCBzaG93Q29tbWFuZCk7CgogIGhpZ2hsaWdodGVkU2FtcGxlcyA9IFtdOwogIHVwZGF0ZUhpZ2hsaWdodFNhbXBsZSgpOwoKICBzZWxlY3RlZFNhbXBsZXMgPSBbXTsKICBzZWxlY3RlZERhdGEgPSBkYXRhWydzY29yZTAnXTsKICBpZiAoc2VsZWN0ZWREYXRhKSB7CiAgICB2YXIgcGxvdERhdGEgPSBjcmVhdGVQbG90KHNlbGVjdGVkRGF0YSwgaGlnaGxpZ2h0ZWRTYW1wbGVzKTsKICAgIHZhciBsYXlvdXQgPSBjcmVhdGVQbG90TGF5b3V0KCk7CiAgICBQbG90bHkubmV3UGxvdCgncGxvdCcsIHBsb3REYXRhLCBsYXlvdXQsIHsKICAgICAgZGlzcGxheU1vZGVCYXI6IGZhbHNlCiAgICB9KTsKCiAgICB2YXIgbXlQbG90ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Bsb3QnKTsKICAgIHZhciBob3ZlckluZm8gPSBteVBsb3Qub24oJ3Bsb3RseV9zZWxlY3RlZCcsIHVwZGF0ZVNlbGVjdGlvbik7CiAgfSBlbHNlIHsKICAgICQoJyNyb3ctcGxvdHMnKS5oaWRlKCk7CiAgfQoKICBpZigkKCcjcG9wdWxhdGlvbi1wbG90JykubGVuZ3RoKXsKICAgIHNob3dQb3B1bGF0aW9uKCk7CiAgICAkKCcjcm93LXBsb3RzJykuaGlkZSgpOwogIH0KCn0pOwo="></script>
+
+</html>

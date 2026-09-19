@@ -1,0 +1,10 @@
+score,coverage,variants_used,variants_total,variants_flipped,variants_ambiguous,trait,trait_efo
+PGS000007,1.0,3820,3820,0,0,Breast Cancer,EFO_0000305
+PGS000034,0.0,0,97,0,0,Adult Body Mass Index,EFO_0004340
+PGS000065,1.0,103,103,0,0,Low density lipoprotein (LDL) cholesterol,EFO_0004611
+PGS000078,0.9908256880733946,108,109,0,0,Lung cancer,EFO_0001071
+PGS000297,0.9963525835866262,3278,3290,0,0,Height,EFO_0004339
+PGS000300,1.0,80,80,0,0,Heart rate,EFO_0004351
+PGS000368,1.0,74,74,0,0,Colorectal cancer,EFO_0005842
+PGS000385,1.0,17,17,0,0,Pancreatic cancer,EFO_0002618
+PGS000578,0.9487179487179487,111,117,0,0,Cancer of prostate,EFO_0001663

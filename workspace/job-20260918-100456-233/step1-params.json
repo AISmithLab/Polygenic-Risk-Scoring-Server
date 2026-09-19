@@ -1,0 +1,143 @@
+{
+    "ancestry": {
+        "max_pcs": 8,
+        "batch_size": 50,
+        "references": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/ancestry-hgdp-worldwide/1.0.0/HGDP_938.*",
+        "dim_high": 20,
+        "dim": 10,
+        "threshold": 0.75,
+        "k": 10,
+        "enabled": true
+    },
+    "phasing": {
+        "engine": "eagle"
+    },
+    "project": "benchmark-w-ancestry",
+    "pgscatalog": {
+        "build": "hg19",
+        "scores": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/pgs-catalog-v20230119-hg19/20230119/scores.txt.gz",
+        "meta": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/pgs-catalog-v20230119-hg19/20230119/scores.meta.json",
+        "categories": [
+            {
+                "id": "Cancer",
+                "name": "Cancer"
+            },
+            {
+                "id": "Biological process",
+                "name": "Biological process"
+            },
+            {
+                "id": "Body measurement",
+                "name": "Body measurement"
+            },
+            {
+                "id": "Cardiovascular disease",
+                "name": "Cardiovascular disease"
+            },
+            {
+                "id": "Cardiovascular measurement",
+                "name": "Cardiovascular measurement"
+            },
+            {
+                "id": "Hematological measurement",
+                "name": "Hematological measurement"
+            },
+            {
+                "id": "Inflammatory measurement",
+                "name": "Inflammatory measurement"
+            },
+            {
+                "id": "Lipid or lipoprotein measurement",
+                "name": "Lipid or lipoprotein measurement"
+            },
+            {
+                "id": "Neurological disorder",
+                "name": "Neurological disorder"
+            },
+            {
+                "id": "Other measurement",
+                "name": "Other measurement"
+            },
+            {
+                "id": "Other trait",
+                "name": "Other trait"
+            },
+            {
+                "id": "Sex-specific PGS",
+                "name": "Sex-specific PGS"
+            }
+        ]
+    },
+    "mode": "imputation",
+    "refpanel": {
+        "qcFilter": {
+            "alleleSwitches": 100
+        },
+        "refEagle": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/1000g-phase-3-v5-public/2.0.0/bcfs/ALL.chr$chr.phase3_v5.shapeit2_mvncall_integrated.noSingleton.genotypes.recode.bcf",
+        "build": "hg19",
+        "genotypes": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/1000g-phase-3-v5-public/2.0.0/msavs/$chr.1000g.Phase3.v5.With.Parameter.Estimates.msav",
+        "sites": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/1000g-phase-3-v5-public/2.0.0/sites/ALL_1000G_phase3_integrated_v5_chr$chr.sites.gz",
+        "id": "1000g-phase-3-v5-public",
+        "mapEagle": "/media/volume/PGS-Server-Storage/pgscalcserver/apps/1000g-phase-3-v5-public/2.0.0/map/genetic_map_hg19_withX.txt.gz",
+        "populations": [
+            {
+                "id": "afr",
+                "name": "AFR",
+                "samples": "661"
+            },
+            {
+                "id": "amr",
+                "name": "AMR",
+                "samples": "347"
+            },
+            {
+                "id": "eas",
+                "name": "EAS",
+                "samples": "504"
+            },
+            {
+                "id": "sas",
+                "name": "SAS",
+                "samples": "489"
+            },
+            {
+                "id": "eur",
+                "name": "EUR",
+                "samples": "503"
+            },
+            {
+                "id": "off",
+                "name": "Off",
+                "samples": "-1"
+            }
+        ]
+    },
+    "output": "/media/volume/PGS-Server-Storage/pgscalcserver/workspace/job-20260918-100456-233/output",
+    "merge_results": false,
+    "password": null,
+    "allele_frequency_population": "off",
+    "encryption": {
+        "aes": false
+    },
+    "imputation": {
+        "meta": false,
+        "min_r2": 0
+    },
+    "project_id": "job-20260918-100456-233",
+    "build": "hg19",
+    "service": {
+        "contact": "",
+        "name": "Cloudgene",
+        "email": "",
+        "url": "http://localhost:8082"
+    },
+    "files": "/media/volume/PGS-Server-Storage/population_genotyping_data/chromosomes/*.vcf.gz",
+    "pgs": {
+        "category": "Cancer",
+        "enabled": true
+    },
+    "user": {
+        "name": "admin",
+        "email": ""
+    }
+}
